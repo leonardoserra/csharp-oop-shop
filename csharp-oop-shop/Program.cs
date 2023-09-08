@@ -63,7 +63,7 @@ internal class Program
                 445
             )
         };
-        Console.WriteLine("Benvenuto alla decathlon! Scegli fra la nostra vastissima gamma di prodotti e ti stamperemo le sue caratteristiche!");
+        Console.WriteLine("Benvenuto da Decathlon! Scegli fra la nostra vastissima gamma di prodotti e ti stamperemo le sue caratteristiche!");
         Console.WriteLine();
 
         for (int i = 0; i < products.Length; i++)
