@@ -49,20 +49,20 @@ namespace csharp_oop_shop
             return this.IdCode.ToString("D8");
         }
 
-        public void PrintProductInfo(Product product) 
+        public void PrintProductInfo() 
         {
             Console.Write("Codice Prodotto: ");
-            Console.WriteLine(product.FormatIdCode());
+            Console.WriteLine(this.FormatIdCode());
             Console.Write("Nome Prodotto: ");
-            Console.WriteLine(product.Name);
+            Console.WriteLine(this.Name);
             Console.Write("Descrizione Prodotto: ");
-            Console.WriteLine(product.Description);
+            Console.WriteLine(this.Description);
             Console.Write("Prezzo senza iva Prodotto: ");
-            Console.WriteLine(product.Price);
+            Console.WriteLine(this.Price);
             Console.Write("Tassazione Prodotto: ");
-            Console.WriteLine(product.VAT);
-            product.PrintSerialName();
-            product.GetTaxedPrice();
+            Console.WriteLine(this.VAT);
+            this.PrintSerialName();
+            this.GetTaxedPrice();
         }
         #endregion
     }

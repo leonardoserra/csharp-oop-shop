@@ -78,7 +78,7 @@ internal class Program
         try
         {
             int choice = int.Parse(Console.ReadLine());
-            products[choice-1].PrintProductInfo(products[choice-1]);
+            products[choice-1].PrintProductInfo();
 
         }catch (Exception ex) 
         {
