@@ -49,7 +49,7 @@ namespace csharp_oop_shop
             return this.IdCode.ToString("D8");
         }
 
-        public void PrintProductInfo()
+        public void PrintProductInfo() 
         {
             Console.Write("Codice Prodotto: ");
             Console.WriteLine(this.FormatIdCode());
