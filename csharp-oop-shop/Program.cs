@@ -75,11 +75,16 @@ internal class Program
         Console.WriteLine();
         Console.Write("Digita il numero di un prodotto: ");
 
-        int choice = int.Parse(Console.ReadLine());
-        if(choice <= 0||choice > products.Length) 
-            Console.WriteLine("Articolo non trovato.");
-        else
+        try
+        {
+            int choice = int.Parse(Console.ReadLine());
             products[choice-1].PrintProductInfo(products[choice-1]);
+
+        }catch (Exception ex) 
+        {
+            Console.WriteLine("Articolo non trovato.");
+        }
+      
             
         
     }
