@@ -22,7 +22,7 @@ namespace csharp_oop_shop
         public Product(string name, string description, int price)
         {
             Random random = new Random();
-            this.IdCode = random.Next(0, 99999999);
+            this.IdCode = random.Next(0, 9999);
             this.Name = name; 
             this.Description = description; 
             this.Price = price;
@@ -33,12 +33,19 @@ namespace csharp_oop_shop
         //getter
         public void GetTaxedPrice()
         {
+
+            int tax = (this.Price * this.VAT) / 100;
             Console.Write("Prezzo con iva: ");
-            Console.WriteLine(this.Price + (this.Price * (this.VAT/100))); 
+            Console.WriteLine(this.Price + tax); 
         }
         public void PrintSerialName()
         {
-            Console.WriteLine("Prodotto: " + this.IdCode + " " + this.Name);
+            Console.WriteLine("Prodotto: " + this.FormatIdCode() + " " + this.Name);
+        }
+
+        public string FormatIdCode()
+        {
+            return this.IdCode.ToString("D8");
         }
         #endregion
     }

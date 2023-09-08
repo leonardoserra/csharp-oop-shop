@@ -3,7 +3,7 @@ using csharp_oop_shop;
 
 Product ball = new Product("Palla da Basket", "Una palla per giocare a basket", 23);
 Console.Write("Codice Prodotto: ");
-Console.WriteLine(ball.IdCode);
+Console.WriteLine(ball.FormatIdCode());
 Console.Write("Nome Prodotto: ");
 Console.WriteLine(ball.Name);
 Console.Write("Descrizione Prodotto: ");
