@@ -43,22 +43,22 @@ internal class Program
                 109
                 ),
             new Product(
-                "Tenda da tetto AUTO",
+                "Tenda da Tetto Automobile",
                 "Voglia di libertà? I nostri ideatori hanno sviluppato questa tenda da tetto per 2 persone facile e veloce da montare, per spostarti come desideri.",
                 1300
                 ),
             new Product(
-                "Mazza baseball",
+                "Mazza Baseball",
                 "Prodotto ideato per i giocatori di livello principiante. Il barile di questa mazza in legno ha il peso ripartito in modo equilibrato, per facilitare i colpi.",
                 49
                 ),
             new Product(
-                "Guantoni adulto boxe",
+                "Guantoni Adulto Boxe",
                 "Ideati per il pugile che cerca dei guantoni confortevoli per gli allenamenti a bassa intensità, per lo sparring o sul sacco.",
                 16
                 ),
             new Product(
-                "Calciobalilla GOLEADOR",
+                "Calciobalilla \"Goleador\"",
                 "Calciobalilla da interno, gambe richiudibili in mdf, piano gioco in vetro, aste uscenti, 10 palline incluse.",
                 445
             )
@@ -74,19 +74,24 @@ internal class Program
 
         Console.WriteLine();
         Console.Write("Digita il numero di un prodotto: ");
-
-        try
+        bool isInputValid = true;
+        while (isInputValid) 
         {
-            int choice = int.Parse(Console.ReadLine());
-            products[choice-1].PrintProductInfo();
-
-        }catch (Exception ex) 
-        {
-            Console.WriteLine("Articolo non trovato.");
-        }
-      
             
-        
+            isInputValid = int.TryParse(Console.ReadLine(), out int choice);
+            try
+            {
+                products[choice - 1].PrintProductInfo();
+                break;
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Articolo non trovato. Selezionane uno presente in lista.");
+                Console.Write("Digita numero: ");
+
+            }
+        }
     }
 #endregion
 }
