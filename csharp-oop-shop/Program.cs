@@ -37,32 +37,32 @@ internal class Program
 
         Product[] products =
         {
-    new Product(
-        "Longboard",
-        "Progettato per fare dei giri e pump track. La sua costruzione riproduce le sensazioni del surf sull'asfalto. Ideale per persone alte più di 1,70 m.",
-        109
-        ),
-    new Product(
-        "Tenda da tetto AUTO",
-        "Voglia di libertà? I nostri ideatori hanno sviluppato questa tenda da tetto per 2 persone facile e veloce da montare, per spostarti come desideri.",
-        1300
-        ),
-    new Product(
-        "Mazza baseball",
-        "Prodotto ideato per i giocatori di livello principiante. Il barile di questa mazza in legno ha il peso ripartito in modo equilibrato, per facilitare i colpi.",
-        49
-        ),
-    new Product(
-        "Guantoni adulto boxe",
-        "Ideati per il pugile che cerca dei guantoni confortevoli per gli allenamenti a bassa intensità, per lo sparring o sul sacco.",
-        16
-        ),
-    new Product(
-        "Calciobalilla GOLEADOR",
-        "Calciobalilla da interno, gambe richiudibili in mdf, piano gioco in vetro, aste uscenti, 10 palline incluse.",
-        445
-        )
-};
+            new Product(
+                "Longboard",
+                "Progettato per fare dei giri e pump track. La sua costruzione riproduce le sensazioni del surf sull'asfalto. Ideale per persone alte più di 1,70 m.",
+                109
+                ),
+            new Product(
+                "Tenda da tetto AUTO",
+                "Voglia di libertà? I nostri ideatori hanno sviluppato questa tenda da tetto per 2 persone facile e veloce da montare, per spostarti come desideri.",
+                1300
+                ),
+            new Product(
+                "Mazza baseball",
+                "Prodotto ideato per i giocatori di livello principiante. Il barile di questa mazza in legno ha il peso ripartito in modo equilibrato, per facilitare i colpi.",
+                49
+                ),
+            new Product(
+                "Guantoni adulto boxe",
+                "Ideati per il pugile che cerca dei guantoni confortevoli per gli allenamenti a bassa intensità, per lo sparring o sul sacco.",
+                16
+                ),
+            new Product(
+                "Calciobalilla GOLEADOR",
+                "Calciobalilla da interno, gambe richiudibili in mdf, piano gioco in vetro, aste uscenti, 10 palline incluse.",
+                445
+            )
+        };
         Console.WriteLine("Benvenuto alla decathlon! Scegli fra la nostra vastissima gamma di prodotti e ti stamperemo le sue caratteristiche!");
         Console.WriteLine();
 
