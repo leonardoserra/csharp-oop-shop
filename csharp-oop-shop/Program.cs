@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+namespace csharp_oop_shop;
 /* 
  Nel progetto csharp-oop-shop, creare la classe Prodotto che gestisce i prodotti di uno shop.
 Un prodotto è caratterizzato da:
