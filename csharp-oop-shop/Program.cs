@@ -29,17 +29,21 @@ Product[] products =
         445
         )
 };
-
-
 Console.WriteLine("Benvenuto alla decathlon! Scegli fra la nostra vastissima gamma di prodotti e ti stamperemo le sue caratteristiche!");
+for (int i = 0; i< products.Length;i++ )
+{
+    Console.Write($"{i + 1}: {products[i].Name}");
+    Console.WriteLine();
+}
 
-while(!(int.TryParse(Console.ReadLine(), out int choice){
+
+while(int.TryParse(Console.ReadLine(), out int choice)==false){
     if(choice < 0 || choice > products.Length-1) {
         continue;
     }
     else
     {
-        products[choice].PrintProductInfo();
+        products[choice - 1].PrintProductInfo(products[choice - 1]);
     }
 }
 
